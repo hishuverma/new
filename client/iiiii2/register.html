@@ -1,0 +1,76 @@
+<div class="col-md-6 offset-md-3 mt-5">
+  <div class="card">
+    <h4 class="card-header">FBA Admin - Register</h4>
+    <div class="card-body">
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="firstname">First Name</label>
+          <input type="text" formControlName="firstname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.firstname.errors }" />
+          <div *ngIf="submitted && f.firstname.errors" class="invalid-feedback">
+            <div *ngIf="f.firstname.errors.required">First name is required</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="lastname">Last Name</label>
+          <input type="text" formControlName="lastname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastname.errors }" />
+          <div *ngIf="submitted && f.lastname.errors" class="invalid-feedback">
+            <div *ngIf="f.lastname.errors.required">Last name is required</div>
+          </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="text" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+              <div *ngIf="f.email.errors.required">Email is required</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+            <div *ngIf="f.password.errors">
+              <div *ngIf="submitted && f.password.errors.required" style = "display:block" class="invalid-feedback">
+                <div >Password is required</div>
+              </div>
+              <div *ngIf="submitted && f.password.errors.minlength" style = "display:block" class="invalid-feedback">
+                <div >Password must contain at least 8 characters</div>
+              </div>
+              <div *ngIf="submitted && f.password.errors.maxlength" style = "display:block" class="invalid-feedback">
+                <div >Password must not exceed 12 characters</div>
+              </div>
+              <div *ngIf="submitted && !f.password.errors.minlength && !f.password.errors.maxlength &&  f.password.errors.passwordStrength"
+               style = "display:block" class="invalid-feedback">
+                <div >  {{f.password.errors.passwordStrength}}</div>
+              </div>
+            </div>
+        </div>
+        <div class="form-group">
+          <label for="confirmpassword">Confirm Password</label>
+          <input type="password" formControlName="confirmpassword" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.confirmpassword.errors }" />
+          <div *ngIf="submitted && registerForm.hasError('notSame')" class="invalid-feedback">
+            <div>Passwords do not match</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input type="text" formControlName="address" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.address.errors }" />
+          <div *ngIf="submitted && f.address.errors" class="invalid-feedback">
+            <div *ngIf="f.address.errors.required">Address is required</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="bizname">Business Name</label>
+          <input type="text" formControlName="bizname" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.bizname.errors }" />
+          <div *ngIf="submitted && f.bizname.errors" class="invalid-feedback">
+            <div *ngIf="f.bizname.errors.required">Business Name is required</div>
+          </div>
+        </div>
+        <button [disabled]="loading" class="btn btn-primary">
+          <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+          Register
+        </button>
+        <br><a routerLink="/login">Login</a>
+        <div *ngIf="error" class="alert alert-danger mt-3 mb-0">{{error}}</div>
+      </form>
+    </div>
+  </div>
+</div>

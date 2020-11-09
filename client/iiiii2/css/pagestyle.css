@@ -1,0 +1,433 @@
+body{margin: 0; padding: 0; font-family: 'Roboto';}
+.header{padding: 15px 0;}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.heading1{  font-size:48px; font-weight: 900; }
+
+.heading1{}
+
+/* .video-container {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+*/
+
+.thumbnail {
+    position: relative;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+ul.topsrch {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+li {}
+
+ul.topsrch li {
+  display: inline-block;
+  margin: 3px 7px 0;
+}
+
+ul.topsrch li {}
+
+ul.topsrch li input {  
+  background: #eaeaea;
+  border-radius: 0;
+  border-color: #eaeaea;
+}
+
+.tobtn-green {}
+
+ul.topsrch li .input-group {}
+
+ul.topsrch li .input-group .tobtn-green {
+  background: #00cc66;
+  font-weight: 600;
+  border-radius: 0 20px 20px 0;
+  outline: none;
+  padding: 5px 30px;
+}
+
+ul.toplinks {
+  margin: 0;
+  padding: 0; text-align:right;
+}
+
+ul.toplinks li {margin-top:3px ;
+  display: inline-block; margin-right:15px;
+}
+
+ul.toplinks li a {
+  color: #00cc66; font-weight:700;
+}
+
+ul.toplinks li a img {
+  margin-right: 15px;
+}  .tobtn-green {
+  background: #00cc66;
+  font-size:16px;
+  font-weight: 600; color:#fff;
+  border-radius:20px;
+  outline: none;
+  padding: 5px 30px;
+}
+.btn-green {
+  background:#c3f53c;
+  font-size:16px;
+  font-weight: 600; color:#fff;
+  border-radius:20px;
+  outline: none;
+  padding: 5px 30px;
+}
+
+.bnr-search {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.bnr-search input {
+  height:50px;
+  outline: none;
+  border-radius: 29px;
+}
+
+.bnr-search .input-group>.input-group-prepend>.btn {
+  border-radius: 0 25px 25px 0;
+  font-size: 20px;
+  color: #000;
+  background: #c3f53c;
+  outline: none;
+}
+.bnrscearch {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 24%;
+}
+
+.banner-video {
+  position: relative;
+  height: 580px;
+  overflow: hidden;
+}
+
+.bnrscearch p {
+  font-size: 19px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.bnrscearch h1.heading1 {
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.ct-hld {
+  display: flex;
+  background: #f8fee7;
+  margin: 15px 0;
+  border-radius: 0 3px 3px 0;
+}
+.ct-hld p {
+  font-size: 17px;
+  padding: 18px 15px 0px 15px;
+}
+
+.ct-hld img {
+  border-radius: 3px 0 0 3px;
+}
+.crear-login {
+  margin-left: 50px;
+}
+
+.crear-login ul {
+  margin: 0;
+  padding: 0;
+}
+
+.crear-login ul li {
+  display: inline-block;
+  margin: 32px 0;
+  margin-right: 15px;
+}
+
+.crear-login .creat-btn {
+  font-size: 21px;
+  width: 75%;
+  padding: 6px 6px 9px;
+  border-radius: 50px;
+}
+
+
+.black-bg {
+  background: #333333;
+  padding: 60px 0;
+  margin: 58px 0;
+}
+
+.black-bg h1.heading1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 46px;
+}
+
+.black-bg .thumbnail {
+  background: #fff;
+}
+
+.black-bg .thumbnail .caption {
+  padding: 15px 15px 0 15px;
+}
+
+.black-bg .thumbnail .caption p {
+  margin: 10px 0 10px 0;
+  font-size: 15px;
+}
+
+.black-bg .thumbnail .caption .btn-green {
+  width: 108%;
+  padding: 12px 15px;
+  display: block;
+  margin: 0 -15px; font-size: 16px;
+  border-radius: 0;
+}
+footer.footer {background: #c3f53c;padding: 60px 0 0;}
+
+h1.heading2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+li.footer-socil {}
+
+ul.footer-socil {
+  margin: 0;
+  padding: 0;
+}
+
+ul.footer-socil li {
+  display: inline-block;
+  margin-top: 5px;
+  margin-right: 30px;
+}
+
+ul.footelink {
+  margin: 15px 0;
+  padding: 0;
+}
+
+ul.footelink li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 25px;
+}
+
+ul.footelink li a {
+  color: #000;
+}
+
+footer.footer .text-center {
+  text-align: center;
+  font-size: 17px;
+  margin: 0 0 8px 0;
+}
+p{font-size: 18px; color:#636466;}
+p.discover{font-size: 22px; font-weight: 300; color:#636466;}
+
+.owl-theme .owl-nav button {
+  position: absolute;
+  top: 50%;
+}
+
+.owl-theme .owl-nav button.owl-prev {
+  left: -47px;
+}
+
+.owl-theme .owl-nav button.owl-next {
+  right: -47px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:767px) {
+
+header.header {}
+
+img {}
+
+header.header .col-md-3 {
+  text-align: center;
+}
+
+header.header .col-md-6 {}
+
+header.header .col-md-6 ul.topsrch {}
+
+ul.topsrch li {
+  width: 100%;
+  margin: 5px 0;
+}
+.heading1 {
+  font-size: 26px;
+}
+ul.toplinks {
+  text-align: center;
+  margin: 15px 0 0;
+}
+
+.bnrscearch h1.heading1 {font-size: 24px;color: #000;margin-bottom: 15px;}
+
+.bnr-search {
+  width: 83%;
+}
+
+.bnr-search input {
+  height: 33px;
+}
+
+button.btn.tobtn-green {}
+
+.bnr-search .input-group>.input-group-prepend>.btn {
+  font-size: 14px;
+}
+
+.bnrscearch {
+  background: #0c6;
+  padding: 15px 0;
+  position: inherit;
+}
+
+.video-container video {
+  height: 760px;
+}
+
+.video-container video {
+  height: auto;
+  margin-bottom: -7px;
+}
+
+.bnrscearch p {
+  margin-bottom: 15px;
+}
+
+.banner-video {
+  height: auto;
+}
+
+.ct-hld {}
+
+.ct-hld p {
+  font-size: 15px;
+}
+
+.crear-login {
+  margin: 25px 0 0 0;
+  text-align: center;
+}
+
+.crear-login ul li {
+  margin: 15px;
+}
+
+.black-bg {
+  margin: 40px 0;
+}
+.black-bg h1.heading1{font-size: 25px;}
+.owl-theme .owl-nav button.owl-next {
+  right: -15px;
+}
+
+.owl-theme .owl-nav button.owl-prev {
+  left: -15px;
+}
+
+p.discover {
+  text-align: center;
+}
+.black-bg .thumbnail .caption {
+  padding: 0;
+  text-align: center;
+}
+.black-bg .thumbnail .caption h4 {
+  font-size: 16px;
+  padding: 0 15px;
+}
+footer.footer{padding:15px 0}
+ul.footelink li {
+  margin: 0 5px;
+  font-size: 13px;
+  text-align: center;
+  display: inline-block;
+}
+
+ul.footer-socil li {
+  text-align: center;
+  margin: 0 12px;
+}
+
+footer.footer h1.heading2 {
+  text-align: center;
+}
+
+footer.footer p {
+  text-align: center;
+}
+
+ul.footelink {
+  margin: 15px 0;
+  display: block;
+  text-align: center;
+}
+.get-app .apimg {
+  width: 100%;
+}
+.get-app h1.heading1 {
+  text-align: center;
+}
+.get-app {}
+
+.get-app .apimg {
+  width: 100%;
+}
+
+.get-app h1.heading1 {
+  text-align: center;
+}
+
+.get-app a {
+  margin: 0 1px 15px;
+}
+
+.get-app a img {
+  width: 93px;
+  margin: 0;
+}
+
+}
+
+.error {
+  color: red;
+}
